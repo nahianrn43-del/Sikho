@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#123b35">
+<title>Sikho (শিখো) — অনলাইন শিক্ষা</title>
+<style>
+:root{--g:#14564a;--deep:#123b35;--mint:#e1f5eb;--bg:#f5f9f7;--ink:#17332d;--muted:#657771;--line:#dfebe5;--gold:#f3ce73}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,"Noto Sans Bengali",sans-serif;line-height:1.55}header{background:linear-gradient(120deg,var(--deep),#19745e);color:white;padding:17px 16px}.wrap{max-width:1000px;margin:auto}.brand{font-size:25px;font-weight:900}.brand span{color:var(--gold)}.top{display:flex;align-items:center;justify-content:space-between;gap:10px}.sub{font-size:13px;color:#d7eee4}.tag{display:inline-block;background:var(--mint);color:var(--g);border-radius:99px;padding:4px 9px;font-size:12px;font-weight:750}.notice{margin:16px 0;background:#fff7df;border:1px solid #f1d99a;border-radius:12px;padding:12px;font-size:13px;color:#674e13}nav{display:flex;gap:7px;overflow:auto;margin-top:15px}nav button{white-space:nowrap;border:1px solid #ffffff55;color:white;background:#ffffff12;border-radius:999px;padding:8px 12px;font:inherit;cursor:pointer}nav button.active{background:white;color:var(--g);font-weight:800}main{padding:18px 15px 40px}.hero{background:var(--mint);border-radius:19px;padding:23px;margin-bottom:18px}.hero h1{font-size:clamp(25px,5vw,38px);line-height:1.25;margin:0 0 8px}.hero p{margin:0 0 15px;color:#47655c}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.card,.panel{background:white;border:1px solid var(--line);border-radius:16px;padding:16px}.card h3{margin:6px 0}.card p,.muted{color:var(--muted);font-size:14px}.emoji{font-size:26px}.btn{border:0;background:var(--g);color:white;padding:10px 14px;border-radius:10px;font:inherit;font-weight:750;cursor:pointer}.btn.alt{background:var(--mint);color:var(--g)}.btn.gold{background:var(--gold);color:#2b3a2e}.btn.small{padding:7px 10px;font-size:13px}.field{width:100%;padding:11px;border:1px solid #d5e4dc;border-radius:10px;margin:6px 0 12px;font:inherit;background:#fff}.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.hidden{display:none!important}.section-title{margin:0 0 12px;font-size:22px}.course{display:flex;flex-direction:column;gap:8px}.course .btn{margin-top:auto}.item{padding:13px 0;border-bottom:1px solid var(--line)}.item:last-child{border-bottom:0}.item h3{margin:5px 0}.smallmuted{font-size:12px;color:var(--muted)}.result{padding:10px;background:var(--mint);border-radius:10px;margin-top:10px}.empty{text-align:center;color:var(--muted);padding:20px}.footer{text-align:center;color:var(--muted);font-size:12px;padding:25px 12px}
+@media(max-width:650px){.grid{grid-template-columns:1fr}.two{grid-template-columns:1fr}.hero{padding:18px}.top{align-items:flex-start}.brand{font-size:22px}}
+</style></head>
+<body>
+<header><div class="wrap">
+ <div class="top"><div><div class="brand">Sikho <span>(শিখো)</span></div><div class="sub">শিখো • জানো • এগিয়ে যাও</div></div><span class="tag">অনলাইন শিক্ষা</span></div>
+ <nav>
+  <button class="active" data-tab="home" onclick="tab('home',this)">হোম</button>
+  <button data-tab="classes" onclick="tab('classes',this)">ক্লাস ও নোট</button>
+  <button data-tab="tests" onclick="tab('tests',this)">পরীক্ষা</button>
+  <button data-tab="student" onclick="tab('student',this)">শিক্ষার্থী</button>
+  <button data-tab="admin" onclick="tab('admin',this)">শিক্ষক / অ্যাডমিন</button>
+ </nav>
+</div></header>
+<main class="wrap">
+<div class="notice"><strong>ডেমো সংস্করণ:</strong> এটি এখনো অনলাইনে সুরক্ষিত সদস্য-অ্যাকাউন্টসহ প্রকাশিত নয়। এখানে যোগ করা তথ্য এই ব্রাউজারে থাকে; অন্য ছাত্রদের কাছে পৌঁছায় না। বাস্তব ব্যক্তিগত ওয়েবসাইটের জন্য পরবর্তী ধাপে নিরাপদ লগইন ও অনলাইন ডেটাবেস লাগবে।</div>
+<section id="home">
+ <div class="hero"><span class="tag">তোমার অনলাইন স্কুল</span><h1>ঘরে বসেই শেখো,<br>নিজের গতিতে এগিয়ে যাও।</h1><p>প্রথম শ্রেণি থেকে দ্বাদশ শ্রেণি—ভিডিও, PDF নোট, লাইভ ক্লাস ও অনলাইন পরীক্ষার জন্য এক জায়গা।</p><button class="btn" onclick="tab('classes')">পড়াশোনা শুরু করো →</button></div>
+ <h2 class="section-title">Sikho-তে যা পাবে</h2><div class="grid">
+ <article class="card"><div class="emoji">🎬</div><h3>ভিডিও ক্লাস</h3><p>শিক্ষকের দেওয়া ভিডিও লিংক থেকে পাঠ দেখো।</p></article>
+ <article class="card"><div class="emoji">📄</div><h3>PDF নোট</h3><p>অধ্যায়ভিত্তিক নোট ও পড়ার উপকরণ খুঁজে নাও।</p></article>
+ <article class="card"><div class="emoji">📝</div><h3>অনলাইন পরীক্ষা</h3><p>নমুনা বহুনির্বাচনী প্রশ্নের উত্তর দিয়ে ফল দেখো।</p></article>
+ </div><div class="panel" style="margin-top:14px"><h2>📣 লাইভ ক্লাসের ঘোষণা</h2><div id="homeLive" class="muted">এখনো কোনো লাইভ ক্লাস যোগ করা হয়নি।</div></div>
+</section>
+<section id="classes" class="hidden">
+ <h2 class="section-title">📚 ক্লাস, ভিডিও ও নোট</h2><p class="muted">শ্রেণি বেছে নিয়ে শিক্ষক যোগ করা উপকরণ দেখো।</p>
+ <label for="gradeFilter">শ্রেণি</label><select id="gradeFilter" class="field" onchange="renderLessons()"><option value="all">সব শ্রেণি</option><option>প্রথম শ্রেণি</option><option>দ্বিতীয় শ্রেণি</option><option>তৃতীয় শ্রেণি</option><option>চতুর্থ শ্রেণি</option><option>পঞ্চম শ্রেণি</option><option>ষষ্ঠ শ্রেণি</option><option>সপ্তম শ্রেণি</option><option>অষ্টম শ্রেণি</option><option>নবম শ্রেণি</option><option>দশম শ্রেণি</option><option>একাদশ শ্রেণি</option><option>দ্বাদশ শ্রেণি</option></select>
+ <div id="lessons" class="panel"></div>
+</section>
+<section id="tests" class="hidden">
+ <h2 class="section-title">📝 নমুনা পরীক্ষা</h2><div class="panel"><p>বাংলা সাধারণ জ্ঞান: ৩টি নমুনা প্রশ্ন</p><form id="quiz" onsubmit="gradeQuiz(event)">
+ <p><strong>১. বাংলা বর্ণমালায় স্বরবর্ণ কয়টি?</strong></p><label><input type="radio" name="q1" value="9"> ৯টি</label><br><label><input type="radio" name="q1" value="11"> ১১টি</label><br><label><input type="radio" name="q1" value="13"> ১৩টি</label>
+ <p><strong>২. বাংলাদেশের জাতীয় ফুল কোনটি?</strong></p><label><input type="radio" name="q2" value="rose"> গোলাপ</label><br><label><input type="radio" name="q2" value="shapla"> শাপলা</label><br><label><input type="radio" name="q2" value="sunflower"> সূর্যমুখী</label>
+ <p><strong>৩. ৫ × ৬ = কত?</strong></p><label><input type="radio" name="q3" value="30"> ৩০</label><br><label><input type="radio" name="q3" value="25"> ২৫</label><br><label><input type="radio" name="q3" value="35"> ৩৫</label>
+ <p><button class="btn" type="submit">উত্তর জমা দাও</button></p></form><div id="quizResult"></div></div>
+</section>
+<section id="student" class="hidden">
+ <h2 class="section-title">🎓 শিক্ষার্থীর প্রবেশ</h2><div class="panel"><p>বাস্তব সংস্করণে ছাত্রছাত্রীরা এখানে নিজেদের অ্যাকাউন্টে লগইন করবে। এখনকার ডেমোতে নিরাপদ লগইন চালু নেই।</p><label>শিক্ষার্থীর নাম (ডেমো)</label><input class="field" id="studentName" placeholder="তোমার নাম"><label>শ্রেণি</label><select class="field" id="studentGrade"><option>প্রথম শ্রেণি</option><option>দ্বিতীয় শ্রেণি</option><option>তৃতীয় শ্রেণি</option><option>চতুর্থ শ্রেণি</option><option>পঞ্চম শ্রেণি</option><option>ষষ্ঠ শ্রেণি</option><option>সপ্তম শ্রেণি</option><option>অষ্টম শ্রেণি</option><option>নবম শ্রেণি</option><option>দশম শ্রেণি</option><option>একাদশ শ্রেণি</option><option>দ্বাদশ শ্রেণি</option></select><button class="btn" onclick="studentDemo()">ডেমো প্রোফাইল দেখো</button><div id="studentResult"></div></div>
+</section>
+<section id="admin" class="hidden">
+ <h2 class="section-title">🛠️ শিক্ষক / অ্যাডমিন প্যানেল</h2><div class="notice">এটি শুধু নমুনা প্যানেল—এখনো পাসওয়ার্ড দিয়ে সুরক্ষিত নয়। এখানে বাস্তব ছাত্রদের ব্যক্তিগত তথ্য দেবে না।</div>
+ <div class="panel"><h3>নতুন পড়ার উপকরণ যোগ করো</h3><label>শ্রেণি</label><select id="lessonGrade" class="field"><option>প্রথম শ্রেণি</option><option>দ্বিতীয় শ্রেণি</option><option>তৃতীয় শ্রেণি</option><option>চতুর্থ শ্রেণি</option><option>পঞ্চম শ্রেণি</option><option>ষষ্ঠ শ্রেণি</option><option>সপ্তম শ্রেণি</option><option>অষ্টম শ্রেণি</option><option>নবম শ্রেণি</option><option>দশম শ্রেণি</option><option>একাদশ শ্রেণি</option><option>দ্বাদশ শ্রেণি</option></select>
+ <label>বিষয়</label><input id="lessonSubject" class="field" placeholder="যেমন: বাংলা"><label>পাঠের শিরোনাম</label><input id="lessonTitle" class="field" placeholder="যেমন: প্রথম অধ্যায়"><label>ধরন</label><select id="lessonType" class="field"><option>ভিডিও ক্লাস</option><option>PDF নোট</option><option>লাইভ ক্লাস</option><option>বাড়ির কাজ</option></select><label>ভিডিও/PDF/লাইভ ক্লাসের URL</label><input id="lessonUrl" class="field" placeholder="https://... (ঐচ্ছিক)"><button class="btn" onclick="addLesson()">উপকরণ যোগ করো</button><div id="adminMsg" class="muted" style="margin-top:9px"></div></div>
+ <div class="panel" style="margin-top:13px"><h3>যোগ করা উপকরণ</h3><div id="adminLessons"></div></div>
+ <div class="panel" style="margin-top:13px"><h3>লাইভ ক্লাসের ঘোষণা</h3><label>ঘোষণা</label><input id="liveText" class="field" placeholder="যেমন: শুক্রবার বিকেল ৪টায় গণিত ক্লাস"><label>লাইভ ক্লাস লিংক</label><input id="liveUrl" class="field" placeholder="https://..."><button class="btn" onclick="addLive()">ঘোষণা প্রকাশ করো</button><div id="liveMsg" class="muted"></div></div>
+</section>
+</main><div class="footer">© <span id="year"></span> Sikho (শিখো) · প্রাথমিক ডেমো</div>
+<script>
+const $=id=>document.getElementById(id);
+let lessons=JSON.parse(localStorage.getItem('sikho_lessons')||'[]'), live=JSON.parse(localStorage.getItem('sikho_live')||'null');
+function esc(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function tab(id,btn){document.querySelectorAll('main section').forEach(x=>x.classList.add('hidden'));$(id).classList.remove('hidden');document.querySelectorAll('nav button').forEach(x=>x.classList.toggle('active',x.dataset.tab===id));if(btn)btn.classList.add('active');if(id==='classes')renderLessons();if(id==='admin')renderAdmin();window.scrollTo({top:0,behavior:'smooth'})}
+function renderLessons(){let g=$('gradeFilter').value;let list=lessons.filter(x=>g==='all'||x.grade===g);$('lessons').innerHTML=list.length?list.map(x=>`<div class="item"><span class="tag">${esc(x.grade)} · ${esc(x.type)}</span><h3>${esc(x.title)}</h3><div class="muted">বিষয়: ${esc(x.subject)}</div>${x.url?`<p><a href="${esc(x.url)}" target="_blank" rel="noopener">উপকরণ খুলুন ↗</a></p>`:''}</div>`).join(''):'<div class="empty">এখনো কোনো উপকরণ যোগ করা হয়নি। শিক্ষক প্যানেল থেকে যোগ করা যাবে।</div>'}
+function renderAdmin(){$('adminLessons').innerHTML=lessons.length?lessons.map((x,i)=>`<div class="item"><strong>${esc(x.title)}</strong><div class="smallmuted">${esc(x.grade)} · ${esc(x.subject)} · ${esc(x.type)}</div><button class="btn small" onclick="delLesson(${i})">মুছুন</button></div>`).join(''):'<div class="empty">কোনো উপকরণ নেই।</div>'}
+function addLesson(){let grade=$('lessonGrade').value,subject=$('lessonSubject').value.trim(),title=$('lessonTitle').value.trim(),type=$('lessonType').value,url=$('lessonUrl').value.trim();if(!subject||!title){$('adminMsg').textContent='বিষয় ও শিরোনাম লিখতে হবে।';return}if(url&&!/^https?:\/\//i.test(url)){ $('adminMsg').textContent='লিংকটি https:// বা http:// দিয়ে শুরু করো।';return}lessons.push({grade,subject,title,type,url});localStorage.setItem('sikho_lessons',JSON.stringify(lessons));$('lessonSubject').value='';$('lessonTitle').value='';$('lessonUrl').value='';$('adminMsg').textContent='উপকরণ এই ব্রাউজারের ডেমোতে যোগ হয়েছে।';renderAdmin();renderLessons()}
+function delLesson(i){if(confirm('এই উপকরণটি মুছবে?')){lessons.splice(i,1);localStorage.setItem('sikho_lessons',JSON.stringify(lessons));renderAdmin();renderLessons()}}
+function addLive(){let text=$('liveText').value.trim(),url=$('liveUrl').value.trim();if(!text){$('liveMsg').textContent='ঘোষণাটি লিখো।';return}if(url&&!/^https?:\/\//i.test(url)){ $('liveMsg').textContent='লিংকটি https:// বা http:// দিয়ে শুরু করো।';return}live={text,url};localStorage.setItem('sikho_live',JSON.stringify(live));renderLive();$('liveMsg').textContent='ঘোষণা ডেমোতে যোগ হয়েছে।'}
+function renderLive(){let h=live?`<strong>${esc(live.text)}</strong>${live.url?`<p><a href="${esc(live.url)}" target="_blank" rel="noopener">লাইভ ক্লাসে যোগ দাও ↗</a></p>`:''}`:'এখনো কোনো লাইভ ক্লাস যোগ করা হয়নি।';$('homeLive').innerHTML=h}
+function studentDemo(){let n=$('studentName').value.trim();if(!n){$('studentResult').innerHTML='<div class="result">আগে নাম লিখো।</div>';return}$('studentResult').innerHTML=`<div class="result">স্বাগতম, <strong>${esc(n)}</strong>! শ্রেণি: ${esc($('studentGrade').value)}। এটি ডেমো প্রোফাইল—অনলাইন অ্যাকাউন্ট নয়।</div>`}
+function gradeQuiz(e){e.preventDefault();let f=new FormData($('quiz')),score=0;if(f.get('q1')==='11')score++;if(f.get('q2')==='shapla')score++;if(f.get('q3')==='30')score++;$('quizResult').innerHTML=`<div class="result">তোমার নম্বর: <strong>${score}/3</strong>। এটি শুধু নমুনা পরীক্ষা; ফলাফল অনলাইনে সংরক্ষিত হয় না।</div>`}
+$('year').textContent=new Date().getFullYear();renderLessons();renderAdmin();renderLive();
+</script></body></html>
